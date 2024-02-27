@@ -1,28 +1,38 @@
-# Sales Management Project
-
-Welcome to the Sales Management Project! This Laravel project helps you manage sales.
-
-## Installation
-
-1. Clone the repository:
-
-   ```cmd
-   git clone "https://github.com/kamalkrishnaa2002/Sales-Management-Project.git"
-   cd Sales-Management-Project
-
-2. Create a `.env` file by copying the `.env.example` file:
-
-   ```cmd
-   copy .env.example .env
-   Update the .env file with your database configuration.
-
-3. Run migrations to set up the database schema:
-
-    php artisan migrate
-
-4. Serve the application:
-    php artisan serve
+Clone the Repository:
+git clone https://github.com/your-username/alaravel.git
+Install Dependencies:
 
 
-# open the url in browser and start using the application
- 
+cd alaravel
+composer install
+
+
+Environment Configuration:
+
+Rename .env.example to .env.
+
+Update the database configuration (DB_HOST,DB_PORT, DB_DATABASE, DB_USERNAME, DB_PASSWORD).
+
+
+Generate a new application key:
+php artisan key:generate
+
+
+Database Setup:
+Run migrations:
+
+php artisan migrate
+
+seed the database with sample data:
+
+php artisan db:seed
+
+
+Serve the Application:
+
+php artisan serve
+
+
+Accessing the Application:
+
+Visit http://localhost:8000 in your browser to access the application.
